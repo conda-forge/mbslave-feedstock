@@ -7,7 +7,7 @@ package:
 
 source:
   #url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mbslave-{{ version }}.tar.gz
-  sha256: 405e44376f9c05ac4207f7b293f5330eb071d2adaf91854ca828b6f2384371a0
+  sha256: 6a35a153823eea863d9ed71124c8ea78ab4baedabb6117b14ca36f5c9e4f1b97
   url: https://github.com/acoustid/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
   
 build:
