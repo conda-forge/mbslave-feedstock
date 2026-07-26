@@ -1,5 +1,5 @@
 {% set name = "mbslave" %}
-{% set version = "29.1.0" %}
+{% set version = "31.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   #url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mbslave-{{ version }}.tar.gz
-  sha256: 88be36a194200c413e44d2d0c240b97558f15680e15b9f0a1023259841b52c38
+  sha256: ff3e98134ced7d7f024f0101abe0ffaecd1c6fc2a2bc5960eb55bdfeba13e431
   url: https://github.com/acoustid/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
 
 build:
@@ -27,6 +27,7 @@ requirements:
     - psycopg2 >=2.9.2,<3.0.0
     - six >=1.16.0,<2.0.0
     - prometheus_client >=0.20.0,<0.21.0
+    - tqdm >=4.64.0,<5.0.0
   run_constrained:
     - mbdata >=29
 
