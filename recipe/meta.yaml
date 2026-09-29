@@ -1,5 +1,5 @@
 {% set name = "mbslave" %}
-{% set version = "31.0.0" %}
+{% set version = "31.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   #url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mbslave-{{ version }}.tar.gz
-  sha256: ff3e98134ced7d7f024f0101abe0ffaecd1c6fc2a2bc5960eb55bdfeba13e431
+  sha256: 17c35d37c6985b472dac613e06eea0de174d200f49503a4912ec2fd385e4dd26
   url: https://github.com/acoustid/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
 
 build:
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.0.0
+    - poetry-core
     - pip
   run:
     - python >={{ python_min }},<4.0.0
